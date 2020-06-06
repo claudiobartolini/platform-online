@@ -35,6 +35,13 @@
   "devDependencies": {
       "@theia/cli": "latest"
   },
+  "scripts": {
+    "prepare": "yarn run clean && yarn build && yarn run download:plugins",
+    "clean": "theia clean",
+    "build": "theia build --mode development",
+    "start": "theia start --plugins=local-dir:plugins",
+    "download:plugins": "theia download:plugins"
+  },  
   "resolutions": {
       "vscode-json-languageserver": "1.2.2",
       "vscode-languageserver-protocol": "3.15.0-next.9",
