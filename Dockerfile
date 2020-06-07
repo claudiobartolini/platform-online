@@ -4,7 +4,7 @@ WORKDIR /home/theia
 ADD package.json ./package.json
 ARG GITHUB_TOKEN
 RUN yarn --pure-lockfile && \
-    NODE_OPTIONS="--max_old_space_size=4096" yarn theia build && \
+    NODE_OPTIONS="--max_old_space_size=8192" yarn theia build && \
     yarn theia download:plugins && \
     yarn --production && \
     yarn autoclean --init && \
