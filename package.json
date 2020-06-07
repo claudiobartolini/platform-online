@@ -32,6 +32,9 @@
         "@theia/terminal": "latest",
         "@theia/vsx-registry": "latest"
     },
+    "engines": {
+        "node": "10.21.x"
+    },    
     "devDependencies": {
         "@theia/cli": "latest",
         "env-cmd": "^10.1.0"
