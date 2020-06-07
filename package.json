@@ -33,6 +33,7 @@
         "@theia/vsx-registry": "latest"
     },
     "engines": {
+        "yarn": "1.22.x",
         "node": "10.21.x"
     },
     "devDependencies": {
