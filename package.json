@@ -33,6 +33,7 @@
         "@theia/vsx-registry": "latest"
     },
     "engines": {
+        "yarn": "1.22.x",
         "node": "10.21.x"
     },    
     "devDependencies": {
@@ -44,7 +45,8 @@
         "clean": "theia clean",
         "build": "theia build --mode development",
         "start-generated": "theia start --plugins=local-dir:plugins",
-        "download:plugins": "theia download:plugins"
+        "download:plugins": "theia download:plugins",
+        "start": "node ./src-gen/backend/main.js"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
