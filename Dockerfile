@@ -15,7 +15,7 @@ RUN yarn --pure-lockfile && \
     yarn autoclean --force && \
     yarn cache clean
 
-FROM node:${NODE_VERSION}-alpine
+FROM node:10-alpine
 # See : https://github.com/theia-ide/theia-apps/issues/34
 RUN addgroup theia && \
     adduser -G theia -s /bin/sh -D theia;
