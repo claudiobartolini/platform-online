@@ -1,5 +1,4 @@
-ARG NODE_VERSION=10
-FROM node:${NODE_VERSION}-alpine
+FROM node:10-alpine
 RUN apk add --no-cache make gcc g++ python
 ARG version=latest
 WORKDIR /home/theia
