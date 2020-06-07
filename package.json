@@ -42,7 +42,7 @@
     },
     "scripts": {
         "clean": "theia clean",
-        "build": "theia build --mode development",
+        "build": "yarn theia build --mode development",
         "download:plugins": "theia download:plugins",
         "start": "node ./src/main.js"
     },
