@@ -3,5 +3,3 @@ node_modules
 lib
 src-gen
 plugins
-yarn.lock
-package-lock.json

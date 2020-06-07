@@ -35,7 +35,7 @@
     "engines": {
         "yarn": "1.22.x",
         "node": "10.21.x"
-    },    
+    },
     "devDependencies": {
         "@theia/cli": "latest",
         "env-cmd": "^10.1.0"
