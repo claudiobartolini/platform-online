@@ -2,7 +2,7 @@ FROM node:10-alpine
 RUN apk add --no-cache make gcc g++ python
 WORKDIR /home/theia
 # ADD package.json ./package.json
-ADD minipackage.json ./package.json
+ADD package.json ./package.json
 ARG GITHUB_TOKEN
 RUN yarn --pure-lockfile && \
     NODE_OPTIONS="--max_old_space_size=8192" yarn theia build && \
