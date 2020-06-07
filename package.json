@@ -45,7 +45,7 @@
         "clean": "theia clean",
         "build": "theia build --mode development",
         "download:plugins": "theia download:plugins",
-        "start": "node ./src/main.js"
+        "start": "npm prepare && node ./src/main.js"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
