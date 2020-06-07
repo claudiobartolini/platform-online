@@ -3,5 +3,4 @@ node_modules
 plugins
 lib
 yarn.lock
-gen-webpack.config.js
 src-gen
