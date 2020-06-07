@@ -1,6 +1,3 @@
 config
 node_modules
-plugins
-lib
 yarn.lock
-src-gen
