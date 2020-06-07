@@ -1,0 +1,54 @@
+{
+    "private": true,
+    "theia": {
+        "frontend": {
+            "config": {
+                "applicationName": "Theia JavaScript/TypeScript Example",
+                "preferences": {
+                    "files.enableTrash": false
+                }
+            }
+        }
+    },
+    "dependencies": {
+        "@theia/callhierarchy": "next",
+        "@theia/file-search": "next",
+        "@theia/git": "next",
+        "@theia/json": "next",
+        "@theia/markers": "next",
+        "@theia/messages": "next",
+        "@theia/mini-browser": "next",
+        "@theia/navigator": "next",
+        "@theia/outline-view": "next",
+        "@theia/plugin-ext-vscode": "next",
+        "@theia/preferences": "next",
+        "@theia/preview": "next",
+        "@theia/search-in-workspace": "next",
+        "@theia/terminal": "next"
+    },
+    "engines": {
+        "yarn": "1.22.x",
+        "node": "10.21.x"
+    },
+    "devDependencies": {
+        "@theia/cli": "latest",
+        "env-cmd": "^10.1.0"
+    },
+    "scripts": {
+        "clean": "theia clean",
+        "build": "theia build --mode development",
+        "start-generated": "theia start --plugins=local-dir:plugins",
+        "download:plugins": "theia download:plugins",
+        "start": "node ./src-gen/backend/main.js"
+    },
+    "resolutions": {
+        "vscode-json-languageserver": "1.2.2",
+        "vscode-languageserver-protocol": "3.15.0-next.9",
+        "vscode-languageserver-types": "3.15.0-next.5",
+        "**/vscode-json-languageserver/**/vscode-languageserver": "6.0.0-next.1",
+        "**/moment": "2.24.0"
+    },
+    "theiaPluginsDir": "plugins",
+    "theiaPlugins": {
+    }
+}
