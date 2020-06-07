@@ -45,7 +45,7 @@
         "build": "theia build --mode development",
         "start-generated": "theia start --plugins=local-dir:plugins",
         "download:plugins": "theia download:plugins",
-        "start": "node ./src-gen/backend/main.js"
+        "start": "node ./src/main.js"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
