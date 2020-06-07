@@ -41,6 +41,8 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
+        "clean": "theia clean",
+        "build": "theia build --mode development",
         "download:plugins": "theia download:plugins",
         "start": "node ./src/main.js"
     },
