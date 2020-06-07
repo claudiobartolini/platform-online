@@ -1,4 +1,9 @@
 config
 node_modules
 yarn.lock
+#remove these to push to Heroku
+plugins
+lib
 src-gen
+gen-webpack.config.js
+webpack.config.js
