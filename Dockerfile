@@ -27,7 +27,7 @@ RUN apk add --no-cache git openssh bash
 ENV HOME /home/theia
 WORKDIR /home/theia
 COPY --from=0 --chown=theia:theia /home/theia /home/theia
-EXPOSE 3000
+EXPOSE $PORT
 ENV SHELL=/bin/bash \
     THEIA_DEFAULT_PLUGINS=local-dir:/home/theia/plugins
 ENV USE_LOCAL_GIT true
