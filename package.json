@@ -41,7 +41,7 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
-        "start": "node ./src/main.js"
+        "start": "node ./src-gen/backend/main.js"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
