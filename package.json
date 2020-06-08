@@ -41,10 +41,6 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
-        "prepare": "yarn run clean && yarn build && yarn run download:plugins",
-        "clean": "theia clean",
-        "build": "theia build --mode development",
-        "download:plugins": "theia download:plugins",
         "start": "node ./src/main.js"
     },
     "resolutions": {
