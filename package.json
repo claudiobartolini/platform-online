@@ -44,7 +44,7 @@
         "clean": "theia clean",
         "build": "npm run theia build --mode development",
         "download:plugins": "theia download:plugins",
-        "start": "node ./src-gen/backend/main.js /home/project --port=$PORT"
+        "start": "node ./src-gen/backend/main.js --port=$PORT"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
