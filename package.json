@@ -41,6 +41,7 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
+        "clean": "theia clean",
         "build": "theia build --mode development",
         "download:plugins": "theia download:plugins",
         "start": "node ./src-gen/backend/main.js --hostname=0.0.0.0 --port=$PORT"
