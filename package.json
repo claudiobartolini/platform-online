@@ -41,8 +41,9 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
-        "prepare": "chown -R theia:theia ./project/ && mv ./project /home/project", 
-        "start": "node ./src-gen/backend/main.js /home/project --hostname=0.0.0.0 --port=$PORT"
+        "build": "theia build --mode development",
+        "download:plugins": "theia download:plugins",
+        "start": "node ./src-gen/backend/main.js --hostname=0.0.0.0 --port=$PORT"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
