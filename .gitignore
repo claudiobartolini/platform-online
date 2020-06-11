@@ -6,4 +6,3 @@ yarn.lock
 #lib
 #src-gen
 #gen-webpack.config.js
-#webpack.config.js
