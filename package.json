@@ -41,7 +41,7 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
-        "prepare": "mkdir ../project && mv ./project/ /home/project && chown -R theia:theia /home/project", 
+        "prepare": "chown -R theia:theia ./project/ && mv ./project /home/project", 
         "start": "node ./src-gen/backend/main.js /home/project --hostname=0.0.0.0 --port=$PORT"
     },
     "resolutions": {
