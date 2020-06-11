@@ -41,10 +41,9 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
-        "prepare": "theia clean && theia download:plugins && theia build --mode development",
-        "clean": "theia clean",
-        "build": "theia build --mode development",
-        "download:plugins": "theia download:plugins",
+        "clean": "npm run theia clean",
+        "build": "npm run theia build --mode development",
+        "download:plugins": "npm run theia download:plugins",
         "start": "node ./src-gen/backend/main.js --hostname=0.0.0.0 --port=$PORT"
     },
     "resolutions": {
