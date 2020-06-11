@@ -41,11 +41,7 @@
         "env-cmd": "^10.1.0"
     },
     "scripts": {
-        "prepare": "yarn run clean && yarn build && yarn run download:plugins",
-        "clean": "theia clean",
-        "build": "theia build --mode development",
-        "download:plugins": "theia download:plugins",
-        "start": "node ./src-gen/backend/main.js --hostname 0.0.0.0 --port $PORT"
+        "start": "node ./src-gen/backend/main.js --hostname=0.0.0.0 --port=$PORT"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
